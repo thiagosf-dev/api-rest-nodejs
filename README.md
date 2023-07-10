@@ -100,3 +100,21 @@ Ignite Rocketseat
     ```
 
 1. criado no `package.json` script para executar a aplicação em modo `watch`: `"dev": "tsx watch ."`
+
+## Eslint
+
+1. instalado o ESLint com o comando:
+
+    ```shell
+      npm i -D eslint @rocketseat/eslint-config
+    ```
+
+1. criado na raíz do projeto o arquivo de configuração do ESLint: `.eslintrc.json`
+
+1. configurado o `.eslintrc.json`: `{
+  "extends": [
+    "@rocketseat/eslint-config/node"
+  ]
+}`
+
+1. criado script para rodar o ESlint e fazer o fix: `"eslint:fix": "eslint --ext .js,.ts src --fix"`
