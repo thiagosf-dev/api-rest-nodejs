@@ -46,3 +46,27 @@ Ignite Rocketseat
 1. convertendo o arquivo `.ts` para `.js` com o comando:
 
     `npx tsc src/index.ts`
+
+## Fastify
+
+1. instalado o Typescript com o comando:
+
+    `npm i fastify`
+
+1. instalado pacotes de tiapgem do `Nodejs` com o comando:
+
+    `npm i -D @types/node`
+
+1. executando a aplicação com o comando:
+
+    `node src/server.ts`
+
+1. instalado lib para automatizar o processo de conversão typescript/javascript com o comando:
+
+    `npm i -D tsx`
+
+1. executando a aplicação com o comando:
+
+    `npx tsx src/server.ts`
+
+1. criado no `package.json` script para executar a aplicação em modo `watch`: `"dev": "tsx watch ."`
