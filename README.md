@@ -6,6 +6,7 @@ Ignite Rocketseat
 
 - Requisições HTTP
 - Verbos HTTP
+- HTTP Codes
 - Tipagem dinâmica VS Tipagem estática
 - Runtime Type Checking (Javascript vanilla)
 - Static Type Checking (Typescript)
@@ -20,6 +21,7 @@ Ignite Rocketseat
 - Environments Variables `.env`
 - Validação do formato de dados com o Zod
 - Requisitos Funcionais / Requisitos Não Funcionais / Regras de Negócio
+- Plugins e Prefix no Fastify
 
 ## Bibliotecas e ferramentas utilizadas neste projeto
 
