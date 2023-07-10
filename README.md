@@ -22,6 +22,7 @@ Ignite Rocketseat
 - Validação do formato de dados com o Zod
 - Requisitos Funcionais / Requisitos Não Funcionais / Regras de Negócio
 - Plugins e Prefix no Fastify
+- Criando types definition para as tabelas do Knex (@types e a extensão .d.ts)
 
 ## Bibliotecas e ferramentas utilizadas neste projeto
 
