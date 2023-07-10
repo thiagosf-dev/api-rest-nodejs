@@ -23,6 +23,7 @@ Ignite Rocketseat
 - Requisitos Funcionais / Requisitos Não Funcionais / Regras de Negócio
 - Plugins e Prefix no Fastify
 - Criando types definition para as tabelas do Knex (@types e a extensão .d.ts)
+- Cookies (contexto entre requisições)
 
 ## Bibliotecas e ferramentas utilizadas neste projeto
 
@@ -39,6 +40,7 @@ Ignite Rocketseat
 - Crypto
 - DotENV
 - Zod
+- Fastify Cookie
 
 ## RF (Requisitos Funcionais)
 
@@ -148,6 +150,12 @@ Ignite Rocketseat
     ```
 
 1. criado no `package.json` script para executar a aplicação em modo `watch`: `"dev": "tsx watch ."`
+
+1. instalado o Fastify Cookie com o comando:
+
+    ```shell
+      npm i @fastify/cookie
+    ```
 
 ## Eslint
 

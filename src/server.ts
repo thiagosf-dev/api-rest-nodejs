@@ -1,9 +1,12 @@
+import fastifyCookie from '@fastify/cookie'
 import fastify from 'fastify'
 import { knex } from './database'
 import { env } from './env'
 import { transactionsRoute } from './routes/transactions'
 
 const app = fastify()
+
+app.register(fastifyCookie)
 
 app.get('/infoapi', async () => {
   return 'API Running successfully'
