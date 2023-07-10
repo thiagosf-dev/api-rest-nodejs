@@ -2,7 +2,7 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "sourse.fixAll.eslint": true,
-    "source.organizeImports": true
+    "source.organizeImports": false
   },
   "[javascript]": {
     "editor.formatOnSave": false,
