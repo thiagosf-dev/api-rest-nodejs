@@ -16,4 +16,5 @@
       "source.fixAll.eslint": true
     }
   },
+  "files.eol": "\n",
 }

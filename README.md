@@ -2,10 +2,39 @@
 
 Ignite Rocketseat
 
-## Conceitos
+## Conceitos aplicados neste projeto
 
+- Requisições HTTP
+- Verbos HTTP
+- Tipagem dinâmica VS Tipagem estática
 - Runtime Type Checking (Javascript vanilla)
 - Static Type Checking (Typescript)
+- Controle de versão Git e `.gitignore`
+- Configuração do editor no arquivo `.vscode/settings.json`
+- Configuração do arquivo `.editorconfig`
+- Configuração de padrão de codificação usando o ESLint no arquivo `.eslintrc.json`
+- Banco de dados relacional
+- Query Builders (Knex.js)
+- Migration
+- Gerar hash para chave de campos como ID usando o uuid
+- Environments .env
+- Validação do formato de dados com o Zod
+
+## Bibliotecas e ferramentas utilizadas neste projeto
+
+- NPM
+- NodeJS
+- Javascript
+- Typescript
+- Git
+- EditorConfig
+- ESLint
+- Fastify
+- Knex
+- SQLite 3
+- Crypto
+- DotENV
+- Zod
 
 ## Passo a passo de como esse projeto foi construído
 
@@ -18,7 +47,7 @@ Ignite Rocketseat
 1. criado na raíz do projeto o arquivo README.md
 
 1. inciando projeto _git_ com o comando:
-  
+
     ```shell
       git init
     ```
@@ -118,3 +147,63 @@ Ignite Rocketseat
 }`
 
 1. criado script para rodar o ESlint e fazer o fix: `"eslint:fix": "eslint --ext .js,.ts src --fix"`
+
+## Banco de dados SQLite e Knex ORM
+
+1. instalado o Knex.js com o comando:
+
+    ```shell
+      npm install knex --save
+    ```
+
+1. instalado o driver do SQLite3 com o comando:
+
+    ```shell
+      npm install sqlite3
+    ```
+
+1. criado na raíz do projeto os arquivos de configuração do knex: `database.ts` e o `knexfile.ts`
+
+1. configurado o arquivo `.editorconfig`
+
+1. configurado o arquivo de configuração de usuário do VSCode `.vscode/settings.json`
+
+1. ajuste no arquivo `.gitignore`
+
+1. adicionado no `package.json` o script para executar comandos da cli do Knex: `"knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js"`
+
+1. criação de migration com o comando:
+
+    ```shell
+      npm run knex -- migrate:make create-transactions
+    ```
+
+1. executando uma migration com o comando:
+
+    ```shell
+      npm run knex -- migrate:latest
+    ```
+
+1. fazendo rollback de uma migration com o comando:
+
+    ```shel
+      npm run knex -- migrate:rollback
+    ```
+
+## Environments
+
+1. criado na raíz do projeto o arquivo `.env`
+
+1. instalado o DotENV com o comando:
+
+    ```shell
+      npm i dotenv
+    ```
+
+## Validação de dados
+
+1. instalação do Zod com o comando:
+
+    ```shell
+      npm i zod
+    ```
