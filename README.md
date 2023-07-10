@@ -17,7 +17,7 @@ Ignite Rocketseat
 - Query Builders (Knex.js)
 - Migration
 - Gerar hash para chave de campos como ID usando o uuid
-- Environments .env
+- Environments Variables `.env`
 - Validação do formato de dados com o Zod
 
 ## Bibliotecas e ferramentas utilizadas neste projeto
