@@ -24,6 +24,8 @@ Ignite Rocketseat
 - Plugins e Prefix no Fastify
 - Criando types definition para as tabelas do Knex (@types e a extensão .d.ts)
 - Cookies (contexto entre requisições)
+- Middlewares
+- Global Hook
 
 ## Bibliotecas e ferramentas utilizadas neste projeto
 

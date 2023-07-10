@@ -8,6 +8,12 @@ const app = fastify()
 
 app.register(fastifyCookie)
 
+app.addHook('preHandler', async (request) => {
+  console.info(
+    `⚡ ${request.protocol}://${request.hostname} from ${request.ip} accessing ➡ [${request.method}] ${request.url}`,
+  )
+})
+
 app.get('/infoapi', async () => {
   return 'API Running successfully'
 })
