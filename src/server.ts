@@ -32,6 +32,6 @@ app.get('/selectAll', async () => {
   return transactions
 })
 
-app.listen({ port: env.PORT }).then(() => {
+app.listen({ port: Number(env.PORT) }).then(() => {
   console.log(`HTTP Server Running: http://localhost:${env.PORT}`)
 })
