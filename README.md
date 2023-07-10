@@ -42,14 +42,14 @@ Ignite Rocketseat
 
 ## RF (Requisitos Funcionais)
 
-- [ ] o usuário deve poder criar uma nova transação
-- [ ] o usuário deve poder obter o resumo da sua conta
-- [ ] o usuário deve poder listar todas as transações que já ocorreram
-- [ ] o usuário deve poder visualizar uma transação única
+- [X] o usuário deve poder criar uma nova transação
+- [X] o usuário deve poder obter o resumo da sua conta
+- [X] o usuário deve poder listar todas as transações que já ocorreram
+- [X] o usuário deve poder visualizar uma transação única
 
 ## RN (Regras de Negócio)
 
-- [ ] a transação pode ser do tipo Crédito, que somará ao valor total, ou Débito, que diminuirá
+- [X] a transação pode ser do tipo Crédito, que somará ao valor total, ou Débito, que diminuirá
 - [ ] deve ser possível identificar o usuário entre as requisições
 - [ ] o usuário só pode visualizar transações que ele criou
 
