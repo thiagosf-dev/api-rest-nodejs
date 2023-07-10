@@ -19,6 +19,7 @@ Ignite Rocketseat
 - Gerar hash para chave de campos como ID usando o uuid
 - Environments Variables `.env`
 - Validação do formato de dados com o Zod
+- Requisitos Funcionais / Requisitos Não Funcionais / Regras de Negócio
 
 ## Bibliotecas e ferramentas utilizadas neste projeto
 
@@ -35,6 +36,21 @@ Ignite Rocketseat
 - Crypto
 - DotENV
 - Zod
+
+## RF (Requisitos Funcionais)
+
+- [ ] o usuário deve poder criar uma nova transação
+- [ ] o usuário deve poder obter o resumo da sua conta
+- [ ] o usuário deve poder listar todas as transações que já ocorreram
+- [ ] o usuário deve poder visualizar uma transação única
+
+## RN (Regras de Negócio)
+
+- [ ] a transação pode ser do tipo Crédito, que somará ao valor total, ou Débito, que diminuirá
+- [ ] deve ser possível identificar o usuário entre as requisições
+- [ ] o usuário só pode visualizar transações que ele criou
+
+## RNF (Requisitos NãoFuncionais)
 
 ## Passo a passo de como esse projeto foi construído
 
