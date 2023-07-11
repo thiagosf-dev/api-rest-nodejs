@@ -1,8 +1,11 @@
 {
-  "name": "02-api-rest-nodejs",
+  "name": "api-rest-nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Finance Transactions API",
   "main": "src/server.ts",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "tsup src --out-dir build",
     "dev": "tsx watch .",
@@ -11,14 +14,14 @@
     "test": "vitest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Thiago Soares Figueiredo",
   "license": "ISC",
   "dependencies": {
     "@fastify/cookie": "^8.3.0",
     "dotenv": "^16.3.1",
     "fastify": "^4.19.2",
     "knex": "^2.5.0",
-    "sqlite3": "^5.1.6",
+    "pg": "^8.11.1",
     "typescript": "^5.1.6",
     "zod": "^3.21.4"
   },
@@ -27,6 +30,7 @@
     "@types/node": "^20.4.1",
     "@types/supertest": "^2.0.12",
     "eslint": "^8.44.0",
+    "sqlite3": "^5.1.6",
     "supertest": "^6.3.3",
     "ts-node": "^10.9.1",
     "tsup": "^7.1.0",

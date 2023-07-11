@@ -31,6 +31,7 @@ Ignite Rocketseat
 - Testes automatizados - E2E
 - Deploy
   - serviço gerenciado (automatizado)
+  - deploy no Render
 
 ## Bibliotecas e ferramentas utilizadas neste projeto
 
@@ -44,6 +45,7 @@ Ignite Rocketseat
 - Fastify
 - Knex
 - SQLite 3
+- Postgree
 - Crypto
 - DotENV
 - Zod
@@ -284,3 +286,9 @@ Ignite Rocketseat
 1. criado no arquivo `package.json` o script: `"build": "tsup src --out-dir build"`
 
 1. criado na raíz do projeto o arquivo `.eslintignore`
+
+1. instalação do driver do Postgree com o comando:
+
+    ```shell
+      npm i pg
+    ```
