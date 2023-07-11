@@ -31,10 +31,12 @@ export async function transactionsRoute(app: FastifyInstance) {
 
       const { id } = getTransactionParamSchema.parse(request.params)
 
-      const transaction = await knex('transactions').where({
-        id,
-        session_id: sessionId,
-      })
+      const transaction = await knex('transactions')
+        .where({
+          id,
+          session_id: sessionId,
+        })
+        .first()
 
       return response.status(200).send({ transaction })
     },

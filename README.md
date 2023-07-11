@@ -26,6 +26,8 @@ Ignite Rocketseat
 - Cookies (contexto entre requisições)
 - Middlewares
 - Global Hook
+- Pirâmide de Testes (E2E ->  INTEGRAÇÃO -> UNITÁRIO)
+- Testes automatizados - E2E
 
 ## Bibliotecas e ferramentas utilizadas neste projeto
 
@@ -43,6 +45,8 @@ Ignite Rocketseat
 - DotENV
 - Zod
 - Fastify Cookie
+- Vitest
+- Supertest
 
 ## RF (Requisitos Funcionais)
 
@@ -235,4 +239,32 @@ Ignite Rocketseat
 
     ```shell
       npm i zod
+    ```
+
+## Testes Automatizados
+
+1. instalação do Vitest com o comando:
+
+    ```shell
+      npm i -D vitest
+    ```
+
+1. criado arquivo de teste para exemplo: `test/example.spec.ts`
+
+1. rodando os testes com o comando:
+
+    ```sheel
+      npx vitest
+    ```
+
+1. criado no `package.json` o script de teste: `"test": "vitest"`
+
+1. instalação do Supertest com o comando:
+
+    ```shell
+      npm i -D supertest
+    ```
+
+    ```shell
+      npm i -D @types/supertest
     ```
