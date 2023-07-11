@@ -2,5 +2,5 @@ import { app } from './app'
 import { env } from './env'
 
 app.listen({ host: '0.0.0.0', port: Number(env.PORT) }).then(() => {
-  console.log(`HTTP Server Running: http://localhost:${env.PORT}`)
+  console.log(`HTTP Server Running on port ${env.PORT}`)
 })
