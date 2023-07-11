@@ -1,4 +1,8 @@
+/db/*.db
+/build/
 /node_modules/
-/db/app.db
+
+package-lock.json
+
 .env
 .env.test

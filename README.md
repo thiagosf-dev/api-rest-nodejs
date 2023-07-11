@@ -22,12 +22,15 @@ Ignite Rocketseat
 - Validação do formato de dados com o Zod
 - Requisitos Funcionais / Requisitos Não Funcionais / Regras de Negócio
 - Plugins e Prefix no Fastify
+- ESbuild como bundle/build/transpile
 - Criando types definition para as tabelas do Knex (@types e a extensão .d.ts)
 - Cookies (contexto entre requisições)
 - Middlewares
 - Global Hook
 - Pirâmide de Testes (E2E ->  INTEGRAÇÃO -> UNITÁRIO)
 - Testes automatizados - E2E
+- Deploy
+  - serviço gerenciado (automatizado)
 
 ## Bibliotecas e ferramentas utilizadas neste projeto
 
@@ -47,6 +50,7 @@ Ignite Rocketseat
 - Fastify Cookie
 - Vitest
 - Supertest
+- Tsup
 
 ## RF (Requisitos Funcionais)
 
@@ -58,8 +62,8 @@ Ignite Rocketseat
 ## RN (Regras de Negócio)
 
 - [X] a transação pode ser do tipo Crédito, que somará ao valor total, ou Débito, que diminuirá
-- [ ] deve ser possível identificar o usuário entre as requisições
-- [ ] o usuário só pode visualizar transações que ele criou
+- [X] deve ser possível identificar o usuário entre as requisições
+- [X] o usuário só pode visualizar transações que ele criou
 
 ## RNF (Requisitos NãoFuncionais)
 
@@ -268,3 +272,15 @@ Ignite Rocketseat
     ```shell
       npm i -D @types/supertest
     ```
+
+## Deploy
+
+1. instalação do Tsup com o comando:
+
+  ```shell
+    npm i -D tsup
+  ```
+
+1. criado no arquivo `package.json` o script: `"build": "tsup src --out-dir build"`
+
+1. criado na raíz do projeto o arquivo `.eslintignore`
